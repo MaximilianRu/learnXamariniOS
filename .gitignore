@@ -1,0 +1,15 @@
+*.DS_Store
+
+Components
+packages
+
+bin
+obj
+
+*.pidb
+*.userprefs
+*.swp
+*.nib
+*.suo
+*.user
+*.pfx

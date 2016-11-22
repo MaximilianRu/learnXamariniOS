@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24V-os-bp4">
+                                <rect key="frame" x="166" y="292" width="43" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ls-EC-Huk">
+                                <rect key="frame" x="8" y="15" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6F-aY-ph5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap or Hold Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlS-Oj-KGm">
+                                <rect key="frame" x="100" y="19" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgd-dA-Kmj">
+                                <rect key="frame" x="164" y="492" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="TouchDownTapOrHoldButton:" destination="BYZ-38-t0r" eventType="touchDown" id="URA-Pg-WWp"/>
+                                    <outletCollection property="gestureRecognizers" destination="NuN-Ce-NoR" appends="YES" id="GWA-f2-cOc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="hlS-Oj-KGm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FDN-IS-nxS"/>
+                            <constraint firstItem="hlS-Oj-KGm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="19" id="Fws-0W-wDy"/>
+                            <constraint firstItem="24V-os-bp4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mxg-UP-zvT"/>
+                            <constraint firstItem="hlS-Oj-KGm" firstAttribute="leading" secondItem="9Ls-EC-Huk" secondAttribute="trailing" constant="53" id="QVb-kf-GSz"/>
+                            <constraint firstItem="24V-os-bp4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gNI-me-idK"/>
+                            <constraint firstItem="hlS-Oj-KGm" firstAttribute="baseline" secondItem="9Ls-EC-Huk" secondAttribute="baseline" id="nFa-Zp-7Yq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hlS-Oj-KGm" secondAttribute="trailing" constant="84" id="tXd-xt-hFH"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="lgy-Ta-2F1" appends="YES" id="csJ-Am-PWO"/>
+                            <outletCollection property="gestureRecognizers" destination="aUg-3o-0Dd" appends="YES" id="s4g-TK-cea"/>
+                            <outletCollection property="gestureRecognizers" destination="D4H-fw-7KT" appends="YES" id="tFV-FO-AtA"/>
+                            <outletCollection property="gestureRecognizers" destination="lQb-6c-sQZ" appends="YES" id="GdW-Ko-uXx"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="TapOrHoldButton" destination="dgd-dA-Kmj" id="877-Ns-KqH"/>
+                        <outlet property="counterLabel" destination="24V-os-bp4" id="lxB-5N-yCv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="lgy-Ta-2F1">
+                    <connections>
+                        <action selector="RightSwipeGestureRecognizer:" destination="BYZ-38-t0r" id="Nmh-OP-1XJ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="aUg-3o-0Dd">
+                    <connections>
+                        <action selector="LeftSwipeGestureRecognizer:" destination="BYZ-38-t0r" id="S5D-aN-OYR"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="D4H-fw-7KT">
+                    <connections>
+                        <action selector="DownSwipeGestureRecognizer:" destination="BYZ-38-t0r" id="FhC-zk-FIj"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="lQb-6c-sQZ">
+                    <connections>
+                        <action selector="UpSwipeGestureRecognizer:" destination="BYZ-38-t0r" id="1i6-4l-Qg7"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.29999999999999999" id="NuN-Ce-NoR"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

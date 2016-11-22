@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gestureCounter", "gestureCounter\gestureCounter.csproj", "{58562A38-37BA-411E-8954-6D0F69B213C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58562A38-37BA-411E-8954-6D0F69B213C3}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{58562A38-37BA-411E-8954-6D0F69B213C3}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{58562A38-37BA-411E-8954-6D0F69B213C3}.Release|iPhone.ActiveCfg = Release|iPhone
+		{58562A38-37BA-411E-8954-6D0F69B213C3}.Release|iPhone.Build.0 = Release|iPhone
+		{58562A38-37BA-411E-8954-6D0F69B213C3}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{58562A38-37BA-411E-8954-6D0F69B213C3}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{58562A38-37BA-411E-8954-6D0F69B213C3}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{58562A38-37BA-411E-8954-6D0F69B213C3}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
