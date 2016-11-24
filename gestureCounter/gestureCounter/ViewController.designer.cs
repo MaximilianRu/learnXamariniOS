@@ -33,8 +33,11 @@ namespace gestureCounter
 		[Action ("RightSwipeGestureRecognizer:")]
 		partial void RightSwipeGestureRecognizer (UIKit.UISwipeGestureRecognizer sender);
 
-		[Action ("TouchDownTapOrHoldButton:")]
-		partial void TouchDownTapOrHoldButton (UIKit.UIButton sender);
+		[Action ("TouchDownTapButton:")]
+		partial void TouchDownTapButton (UIKit.UIButton sender);
+
+		[Action ("TouchUpInsideTapButton:")]
+		partial void TouchUpInsideTapButton (UIKit.UIButton sender);
 
 		[Action ("UpSwipeGestureRecognizer:")]
 		partial void UpSwipeGestureRecognizer (UIKit.UISwipeGestureRecognizer sender);

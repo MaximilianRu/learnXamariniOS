@@ -41,14 +41,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgd-dA-Kmj">
-                                <rect key="frame" x="164" y="492" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3be-We-rHw">
+                                <rect key="frame" x="137.5" y="483" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3F3-Yi-J1X"/>
+                                </constraints>
+                                <state key="normal" title="Tap or hold"/>
                                 <connections>
-                                    <action selector="TouchDownTapOrHoldButton:" destination="BYZ-38-t0r" eventType="touchDown" id="URA-Pg-WWp"/>
-                                    <outletCollection property="gestureRecognizers" destination="NuN-Ce-NoR" appends="YES" id="GWA-f2-cOc"/>
+                                    <action selector="TouchDownTapButton:" destination="BYZ-38-t0r" eventType="touchDown" id="h6H-Ci-nEO"/>
+                                    <action selector="TouchUpInsideTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zSh-NQ-lkU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,7 +60,9 @@
                             <constraint firstItem="hlS-Oj-KGm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="19" id="Fws-0W-wDy"/>
                             <constraint firstItem="24V-os-bp4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mxg-UP-zvT"/>
                             <constraint firstItem="hlS-Oj-KGm" firstAttribute="leading" secondItem="9Ls-EC-Huk" secondAttribute="trailing" constant="53" id="QVb-kf-GSz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3be-We-rHw" secondAttribute="bottom" constant="154" id="Vpc-JF-ls8"/>
                             <constraint firstItem="24V-os-bp4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gNI-me-idK"/>
+                            <constraint firstItem="3be-We-rHw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iKV-yX-kb7"/>
                             <constraint firstItem="hlS-Oj-KGm" firstAttribute="baseline" secondItem="9Ls-EC-Huk" secondAttribute="baseline" id="nFa-Zp-7Yq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hlS-Oj-KGm" secondAttribute="trailing" constant="84" id="tXd-xt-hFH"/>
                         </constraints>
@@ -71,7 +74,6 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="TapOrHoldButton" destination="dgd-dA-Kmj" id="877-Ns-KqH"/>
                         <outlet property="counterLabel" destination="24V-os-bp4" id="lxB-5N-yCv"/>
                     </connections>
                 </viewController>
@@ -96,8 +98,8 @@
                         <action selector="UpSwipeGestureRecognizer:" destination="BYZ-38-t0r" id="1i6-4l-Qg7"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.29999999999999999" id="NuN-Ce-NoR"/>
             </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
