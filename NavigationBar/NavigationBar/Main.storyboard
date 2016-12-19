@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UCE-fo-hjo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--title-->
+        <scene sceneID="RdP-vZ-sQx">
+            <objects>
+                <navigationController title="title" id="UCE-fo-hjo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="mQF-5a-AJo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vab-Nx-EQ8" kind="relationship" relationship="rootViewController" id="4s1-jH-36j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCJ-ij-bGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-328" y="145"/>
+        </scene>
+        <!--bla-->
+        <scene sceneID="aFU-Ld-TSF">
+            <objects>
+                <viewController title="bla" id="vab-Nx-EQ8" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f77-KM-Zg2"/>
+                        <viewControllerLayoutGuide type="bottom" id="XdU-17-rh8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kI6-my-jWm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyJ-y5-ocT">
+                                <rect key="frame" x="163" y="286" width="49" height="95.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6x-Kg-hQy">
+                                <rect key="frame" x="172" y="476.5" width="30" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title=" +1"/>
+                                <connections>
+                                    <action selector="addOneButton:" destination="vab-Nx-EQ8" eventType="touchUpInside" id="nNx-gf-iKY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v6x-Kg-hQy" firstAttribute="top" secondItem="MyJ-y5-ocT" secondAttribute="bottom" constant="95" id="Z9J-6h-ftx"/>
+                            <constraint firstItem="MyJ-y5-ocT" firstAttribute="centerX" secondItem="kI6-my-jWm" secondAttribute="centerX" id="ezP-zg-isq"/>
+                            <constraint firstItem="MyJ-y5-ocT" firstAttribute="centerY" secondItem="kI6-my-jWm" secondAttribute="centerY" id="rs1-6z-XT7"/>
+                            <constraint firstItem="v6x-Kg-hQy" firstAttribute="centerX" secondItem="kI6-my-jWm" secondAttribute="centerX" id="vCw-ti-5r5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Counter" id="VTL-B9-tux">
+                        <barButtonItem key="backBarButtonItem" id="pTX-on-je2"/>
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="GIi-XE-gtj">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="navReset:" destination="vab-Nx-EQ8" id="eyB-ta-oK4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="counterLabel" destination="MyJ-y5-ocT" id="p4U-BT-Wcc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rU2-Cp-ioT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437.60000000000002" y="143.47826086956522"/>
+        </scene>
+    </scenes>
+</document>
